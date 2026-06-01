@@ -1,0 +1,63 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background: #111;
+  color: #fff;
+  transition: 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+/* When open */
+.sidebar.open {
+  left: 0;
+}
+
+/* Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background: #575757;
+}
+
+/* Menu Button */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #111;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}

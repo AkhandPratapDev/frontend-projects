@@ -1,0 +1,130 @@
+.product-display {
+  margin-top: 30px;
+}
+
+.product-display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.product-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: clamp(25px, 5vw, 60px);
+}
+
+
+.product-poster {
+  grid-column: 1 / -1;
+  /* make poster span across all grid columns */
+  width: 100%;
+  text-align: center;
+}
+
+.product-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+@media (max-width: 767px) {
+  .product-display-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .product-poster img {
+    height: 32vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-display-list {
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 15px), 1fr));
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+  }
+
+  .product-poster img {
+    height: 35vw;
+  }
+
+}
+
+
+
+
+/* Skeleton */
+
+.skeleton-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #00000015;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+}
+
+/* Skeleton shimmer effect only inside */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.skeleton-text-content {
+  padding: 10px;
+}
+
+
+/* Image placeholder (same ratio as product image) */
+.skeleton-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Text placeholders */
+.skeleton-text {
+  height: 14px;
+  margin: 10px;
+  border-radius: 4px;
+  width: clamp(60%, 20vw, 90%)
+}
+
+.skeleton-text.short {
+  width: clamp(40%, 15vw, 60%);
+}
+
+/* Price placeholder */
+.skeleton-price {
+  width: clamp(30px, 12vw, 40%);
+  height: 16px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+/* Button placeholder */
+.skeleton-btn {
+  width: clamp(100px, 40vw, 80%);
+  height: 35px;
+  margin: 15px auto 0;
+  border-radius: 8px;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}

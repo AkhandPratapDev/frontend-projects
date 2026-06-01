@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --color-body: #fff;        
+  --color-primary: #000;              
+  --color-text-primary: #000;        
+  --color-text-secondary: #454545; 
+  --color-text-light: #cacaca;     
+  --color-white: #fff;                
+  --color-search-bg: #ebebeb;        
+  --color-border: #cacaca;          
+  --color-overlay-gray:gray; 
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout {
+  width: 90%;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Disable text selection everywhere */
+html, body, * {
+  -webkit-user-select: none; /* Chrome/Safari/Edge (Blink/WebKit) */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Old IE/Edge */
+  user-select: none;         /* Standard */
+  -webkit-touch-callout: none; /* iOS: disable touch callout */
+}
+
+/* Make images not draggable */
+img, svg {
+  -webkit-user-drag: none; /* Chrome/Safari */
+  user-drag: none;         /* Non-standard, some support */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Optional: prevent selection on common interactive elements too */
+a, button {
+  -webkit-user-select: none;
+  user-select: none;
+}

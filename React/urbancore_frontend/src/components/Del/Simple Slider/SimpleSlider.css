@@ -1,0 +1,33 @@
+.slider {
+  position: relative;
+  width: 600px;
+  margin: auto;
+}
+
+.slider-img {
+    margin-top: 150px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: lightgray;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: black;
+}

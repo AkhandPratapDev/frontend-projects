@@ -1,0 +1,223 @@
+/* General layout */
+.account-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+}
+
+/* Profile header */
+.account-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.avatar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.avatar-edit-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-edit-btn:hover {
+  background: #333;
+}
+
+/* Avatar modal */
+.avatar-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.avatar-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.avatar-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.avatar-choice {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.avatar-choice:hover {
+  transform: scale(1.1);
+}
+
+.avatar-choice.selected {
+  border: 2px solid #111;
+}
+
+.close-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #333;
+}
+.pencil-icon {
+  width: 14px;
+  height: 14px;
+  filter: invert(1); /* make it white if black */
+}
+
+/* (rest of your orders + settings styles stay same as before) */
+
+
+/* Orders */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+.order-card.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card.clickable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.order-info h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.order-info p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.order-price {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Status styling */
+.status {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.status.delivered {
+  background: #e6f7ed;
+  color: #1a7f3d;
+}
+
+.status.shipped {
+  background: #e6f0ff;
+  color: #264ec7;
+}
+
+.status.processing {
+  background: #fff5e6;
+  color: #b76b00;
+}
+
+/* Settings buttons */
+.account-btn {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.account-btn:hover {
+  background: #333;
+}
+
+.account-btn.logout {
+  background: #c62828;
+}
+
+.account-btn.logout:hover {
+  background: #a91f1f;
+}
+
+/* Empty orders */
+.empty {
+  font-size: 0.95rem;
+  color: #777;
+}
