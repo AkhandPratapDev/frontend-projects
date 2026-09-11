@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSite</title>
+    <link rel="shortcut icon" href="../images/main_logoRed.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section Starts -->
+
+    <header class="header">
+        <a href="#home" class="logo"><img src="../images/main_logoRed.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#movies">movie</a>
+            <a href="#tv_shows">tv shows</a>
+            <a href="#sports">sports</a>
+            <a href="#news">news</a>
+        </nav>
+
+        <div class="search_form">
+            <input type="search" id="search_box" placeholder="Search Movies,Shows........">
+            <label for="search_box" class="fas fa-search"></label>
+        </div>
+        <label for="search_box" class="fas fa-search" id="search_icon"></label>
+
+        <div class="nav_btns">
+            <button class="buy_plans" id="buy_plans">Buy Plan</button>
+            <img src="../images/avtar.png" alt="" id="profile_pic" class="login">
+        </div>
+
+
+        <!-- Form Section Starts -->
+    <form action="#" method="get" id="login_container">
+        <span class="close_sym" id="close_sym">&times;</span>
+        <img src="../images/avtar.png" alt="" id="profile_pic" class="user_img">
+        <input type="file" accept="image/jpge ,image/png ,image/jpg" id="input_file">
+        <label for="input_file" class="upload_img">Upload <div class="fas fa-upload"></div></label>
+
+        <div class="user_info">
+            <label for="uname" class="name"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required class="username">
+
+            <label for="psw" class="pws"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required class="password">
+
+            <button type="submit" class="login_btn">Login</button>
+            <label class="remember">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="reset_btns">
+            <button type="reset" class="reset_btn">Cancel</button>
+            <span class="forgot_pws">Forgot&nbsp;<a href="#">password?</a></span>
+
+        </div>
+
+        <button class="sign_up">sign up <div class="fas fa-user"></div></button>
+
+    </form>
+
+    <!-- Form Section End -->
+
+
+ <!-- BuyPlan section stars -->
+
+ <div class="buy_plan" id="buy_plan">
+    <div class="ad_container">
+        <img class="ad_img" src="../images/ad_1.png" alt="Ads">
+        <img class="ad_img" src="../images/movie13.jpg" alt="Ads">
+        <img class="ad_img" src="../images/movie4.jpg" alt="Ads">
+    </div>
+    <h2 class="choose_plan">Choose Your Plan</h2>
+    <div class="plan_cards">
+        <div class="plan_card planCard_1">
+            <h2 class="premium">Premium</h1>
+                <h2 class="price">$99</h2>
+                <h3 class="time">1 month</h3>
+
+        </div>
+        <div class="plan_card planCard_2">
+            <h2 class="premium">Premium</h1>
+                <h2 class="price">$499</h2>
+                <h3 class="time">6 month</h3>
+        </div>
+        <div class="plan_card planCard_3">
+            <h2 class="premium">Premium</h1>
+                <h2 class="price">$999</h2>
+                <h3 class="time">1 Year</h3>
+        </div>
+    </div>
+    <button class="applyCode">Aplly Code</button>
+
+    <div class="plan_benifits">
+
+        <ul class="benefits">
+            <li>Watch all programs Ad-Free.</li>
+            <li>Watch latest episode of TV Shows.</li>
+            <li>Watch on all devices.</li>
+        </ul>
+        <img class="plan_logo" src="../images/main_logoRed.png" alt="">
+    </div>
+</div>
+
+<!-- BuyPlan section End -->
+
+    </header>
+    <!-- Header Section Ends -->
+
+    
+
+
+   
+
+    <!-- Top btns section Starts -->
+
+    <section class="btn_options" id="btn_options">
+        <div class="btns_container" id="home">
+
+            <a href="#"><button>For You</button></a>
+            <a href="#"><button>Cricket</button></a>
+            <a href="#"><button>Live</button></a>
+            <a href="#"><button>Breaking News</button></a>
+            <a href="#"><button>Latest Movies</button></a>
+            <a href="#"><button>IPL</button></a>
+            <a href="#"><button>Boxing</button></a>
+            <a href="#"><button>Latest Movies</button></a>
+            <a href="#"><button>Drama</button></a>
+            <a href="#"><button>TV Show</button></a>
+            <a href="#"><button>Web Series</button></a>
+            <a href="#"><button>HollyWood Movies</button></a>
+            <a href="#"><button>Hindi Movies</button></a>
+            <a href="#"><button>Football</button></a>
+            <a href="#"><button>News</button></a>
+            <a href="#"><button>Baseball live</button></a>
+            <a href="#"><button>Wild Life</button></a>
+            <a href="#"><button>Bussines</button></a>
+            <a href="#"><button>Sports</button></a>
+            <a href="#"><button>Travelling</button></a>
+            <a href="#"><button>Emotional Moviess</button></a>
+            <a href="#"><button>Action Movies</button></a>
+            <a href="#"><button>Premium</button></a>
+            <a href="#"><button>more</button></a>
+        </div>
+    </section>
+    <!-- Top btns section Ends -->
+
+
+    <!-- Ad Section Starts -->
+    <section class="ads2_container">
+
+        <div class="fa-solid fa-circle-chevron-left" id="backBtn"></div>
+
+        <div>
+            <img class="ad1_img" src="../images/news1.jpg" alt="">
+            <img class="ad1_img" src="../images/news3.jpg" alt="">
+            <img class="ad1_img" src="../images/news4.jpg" alt="">
+            <img class="ad1_img" src="../images/news8.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="ad2_img" src="../images/movie9.jpg" alt="">
+            <img class="ad2_img" src="../images/movie2.jpg" alt="">
+            <img class="ad2_img" src="../images/movie4.jpg" alt="">
+            <img class="ad2_img" src="../images/movie5.png" alt="">
+            <img class="ad2_img" src="../images/movie16.png" alt="">
+        </div>
+
+        <div>
+            <img class="ad3_img" src="../images/live7.jpg" alt="">
+            <img class="ad3_img" src="../images/live8.jpg" alt="">
+            <img class="ad3_img" src="../images/live9.jpg" alt="">
+            <img class="ad3_img" src="../images/trending5.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="ad4_img" src="../images/ad_2.png" alt="">
+            <img class="ad4_img" src="../images/movie3.jpg" alt="">
+            <img class="ad4_img" src="../images/movie13.jpg" alt="">
+            <img class="ad4_img" src="../images/movie15.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="ad5_img" src="../images/live2.jpg" alt="">
+            <img class="ad5_img" src="../images/live3.jpg" alt="">
+            <img class="ad5_img" src="../images/live4.jpg" alt="">
+            <img class="ad5_img" src="../images/live11.jpg" alt="">
+        </div>
+
+        <div>
+            <img class="ad6_img" src="../images/movie1.jpg" alt="">
+            <img class="ad6_img" src="../images/movie8.jpg" alt="">
+            <img class="ad6_img" src="../images/movie11.jpg" alt="">
+            <img class="ad6_img" src="../images/tvshow8.png" alt="">
+        </div>
+
+        <div class="fa-solid fa-circle-chevron-right" id="nextBtn"></div>
+
+    </section>
+
+    <!-- Ad Section Ends -->
+
+    <!-- main Section Starts  -->
+    <section class="main" id="main">
+        <h2 class="videos_title">Trending</h2>
+        <div class="trending_container">
+            <a href="#"><img src="../images/movie2.jpg" alt=""></a>
+            <a href="#"><img src="../images/news1.jpg" alt=""></a>
+            <a href="#"><img src="../images/news9.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending4.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending5.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending6.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending7.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending8.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending9.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending10.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending11.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending12.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending13.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending14.jpg" alt=""></a>
+            <a href="#"><img src="../images/trending15.jpg" alt=""></a>
+
+        </div>
+        <h2 class="videos_title" id="tv_shows">Top TV Shows</h2>
+        <div class="topShows_container">
+            <a href="#"><img src="../images/tvshow1.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow2.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow3.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow4.png" alt=""></a>
+            <a href="#"><img src="../images/tvshow5.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow6.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow7.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow8.png" alt=""></a>
+            <a href="#"><img src="../images/tvshow9.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow10.png" alt=""></a>
+            <a href="#"><img src="../images/tvshow11.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow12.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow13.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow14.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow15.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow16.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow17.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshows18.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow19.png" alt=""></a>
+            <a href="#"><img src="../images/tvshow20.jpg" alt=""></a>
+            <a href="#"><img src="../images/tvshow21.jpg" alt=""></a>
+        </div>
+        <h2 class="videos_title">Live</h2>
+        <div class="live_container">
+            <a href="#"><img src="../images/live1.jpg" alt=""></a>
+            <a href="#"><img src="../images/live2.jpg" alt=""></a>
+            <a href="#"><img src="../images/live3.jpg" alt=""></a>
+            <a href="#"><img src="../images/live4.jpg" alt=""></a>
+            <a href="#"><img src="../images/live5.jpg" alt=""></a>
+            <a href="#"><img src="../images/live6.jpg" alt=""></a>
+            <a href="#"><img src="../images/live7.jpg" alt=""></a>
+            <a href="#"><img src="../images/live8.jpg" alt=""></a>
+            <a href="#"><img src="../images/live9.jpg" alt=""></a>
+            <a href="#"><img src="../images/live10.jpg" alt=""></a>
+            <a href="#"><img src="../images/live11.jpg" alt=""></a>
+            <a href="#"><img src="../images/live12.jpg" alt=""></a>
+
+        </div>
+
+
+        <h2 class="videos_title" id="movies">Top Movies</h2>
+        <div class="movies_container">
+            <a href="#"><img src="../images/movie1.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie2.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie3.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie4.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie5.png" alt=""></a>
+            <a href="#"><img src="../images/movie6.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie7.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie8.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie9.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie10.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie11.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie12.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie13.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie14.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie15.jpg" alt=""></a>
+            <a href="#"><img src="../images/movie16.png" alt=""></a>
+        </div>
+
+
+        <h2 class="videos_title" id="sports">Sports</h2>
+        <div class="sports_container">
+            <a href="#"><img src="../images/sportsc1.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc2.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc3.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc4.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc5.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc6.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc7.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc8.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc9.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc10.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc11.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc12.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc13.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc14.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc15.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc16.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc17.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc18.jpg" alt=""></a>
+            <a href="#"><img src="../images/sportsc19.jpg" alt=""></a>
+        </div>
+        <h2 class="videos_title"></h2>
+        <div class="sportsV_container">
+            <a href="#"><img src="../images/sport1.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport2.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport3.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport4.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport5.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport6.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport7.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport8.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport9.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport10.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport11.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport12.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport13.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports14.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports15.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports16.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports17.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports18.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports19.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports20.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports21.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports22.jpg" alt=""></a>
+            <a href="#"><img src="../images/sports23.jpg" alt=""></a>
+            <a href="#"><img src="../images/sport24.jpg" alt=""></a>
+        </div>
+
+        <div class="ad3_container">
+            <div class="ad3_box">
+                <img class="ad7_img" src="../images/all_img1.png" alt="">
+                <img class="ad7_img" src="../images/all_img2.png" alt="">
+                <img class="ad7_img" src="../images/all_img3.png" alt="">
+            </div>
+
+        </div>
+
+        <h2 class="videos_title">Movies You Must Watch</h2>
+        <div class="mustMovie_container">
+            <a href="#"><img src="../images/mustWatch1.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch2.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch3.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch4.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch5.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch6.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch7.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch8.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch9.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch10.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch11.png" alt=""></a>
+            <a href="#"><img src="../images/mustWatch12.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch13.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch14.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch15.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch16.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch17.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch18.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch19.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch20.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch21.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch22.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch23.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch24.jpg" alt=""></a>
+            <a href="#"><img src="../images/mustWatch25.jpg" alt=""></a>
+
+        </div>
+
+        <h2 class="videos_title" id="news">News</h2>
+        <div class="news_container">
+            <a href="#"><img src="../images/newsc1.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc2.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc3.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc4.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc5.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc6.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc7.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc8.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc9.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc10.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc11.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc12.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc13.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc14.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc15.jpg" alt=""></a>
+            <a href="#"><img src="../images/newsc16.jpg" alt=""></a>
+
+        </div>
+
+        <h2 class="videos_title"></h2>
+        <div class="newsV_container">
+            <a href="#"><img src="../images/news1.jpg" alt=""></a>
+            <a href="#"><img src="../images/news2.jpg" alt=""></a>
+            <a href="#"><img src="../images/news3.jpg" alt=""></a>
+            <a href="#"><img src="../images/news4.jpg" alt=""></a>
+            <a href="#"><img src="../images/news5.jpg" alt=""></a>
+            <a href="#"><img src="../images/news6.jpg" alt=""></a>
+            <a href="#"><img src="../images/news7.jpg" alt=""></a>
+            <a href="#"><img src="../images/news8.jpg" alt=""></a>
+            <a href="#"><img src="../images/news9.jpg" alt=""></a>
+            <a href="#"><img src="../images/news10.png" alt=""></a>
+            <a href="#"><img src="../images/news11.jpg" alt=""></a>
+            <a href="#"><img src="../images/news12.jpg" alt=""></a>
+
+        </div>
+    </section>
+    <!-- main Section Ends  -->
+
+    <!-- Footer section starts -->
+
+    <section class="footer" id="footer">
+     <a href="#home"><button class="backto_top">Back to Top</button></a>
+        <div class="last_contianer">
+            <div class="connect">
+                <h2>Connect With Us</h2>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+                <h3>Term to Use || Privacy Policy || FAQ</h3>
+
+            </div>
+
+            <div class="watches">
+                <h2>WATCH</h2>
+                <div class="all_links">
+                <a href="#"><h3>Movies</h3></a>
+                <a href="#"><h3>TV Shows</h3></a>
+                <a href="#"><h3>Web Series</h3></a>
+                <a href="#"><h3>Sports</h3></a>
+                <a href="#"><h3>News</h3></a>
+            </div>
+            <h3 class="need_help">NEED HELP?</h3>
+
+          
+
+
+            </div>
+            <!-- <div class="company">
+
+            </div> -->
+            <div class="app_download">
+                <img src="../images/main_logoRed.png" alt="">
+                <h2>Download Our App</h2>
+                <button class="download">Download <div class="fas fa-download"></div></button>
+            </div>
+
+        </div>
+    </section>
+    <div class="copyright">
+        <h2>Copyright &copy; 2024 Watch All Right Reserved by Mr. Singh</h2>
+    </div>
+    <!-- Footer section Ends -->
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

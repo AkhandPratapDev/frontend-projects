@@ -1,0 +1,59 @@
+{
+    "logos": [
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 1",
+        "downloadHref": "/TRY/IMAGES/web.png",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 2",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 3",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 4",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 5",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 6",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 7",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 8",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      },
+      {
+        "imgSrc": "/TRY/IMAGES/web.png",
+        "imgAlt": "Hero Logo 9",
+        "downloadHref": "../Images/art_back.jpg",
+        "downloadName": "book"
+      }
+    ]
+  }
+  

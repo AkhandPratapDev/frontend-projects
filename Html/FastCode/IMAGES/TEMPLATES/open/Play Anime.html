@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST Code - Play Anime</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+
+        .hero{
+            min-height: 100vh;
+            background: url(./images/playanime_back.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 98%;
+            margin: auto;
+            padding: 10px 0;
+            border-bottom: 2px solid #fff;
+        }
+
+        .logo{
+            width: 200px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li{
+            margin: 0 20px;
+        }
+
+        nav ul li a{
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover{
+            color: #2d6699;
+            border-bottom: 2px solid #2d6699;
+        }
+        nav button{
+            padding: 11px 35px;
+            background: #2d6699;
+            color: #fff;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: .3s;
+        }
+        nav button:hover{
+            scale: .8;
+        }
+
+        .content{
+            position: absolute;
+            top: 30%;
+            left: 90px;
+        }
+
+        h2{
+            color: #fff;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+
+        h2 span{
+            color: #2d6699;
+        }
+
+        p{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #fff;
+        }
+
+        .content button{
+            margin-top: 30px;
+            padding: 12px 45px;
+            border: none;
+            border-radius: 2rem;
+            background: #2d6699;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .content button:hover{
+            scale: 1.1;
+        }
+
+        .content button.know_more{
+            border: 2px solid #2d6699;
+            color: #2d6699;
+            background: transparent;
+            margin-left: 25px;
+        }
+        .content button.know_more:hover{
+            background: #2d6699;
+            color: #fff;
+        }
+
+        .movies{
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .movies img{
+            width: 120px;
+            border: 2px solid #2d6699;
+            border-radius: .5rem;
+            transition: .3s;
+        }
+
+        .movies img:hover{
+            scale: 1.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./images/playanime_logo.png"  class="logo">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+            <button>More</button>
+        </nav>
+
+        <div class="content">
+            <h2>Explore Anime  <br>Worlds, <span>Discover</span>  <br> Your Story</h2>
+            <p>Embark on a journey through vibrant anime realms. Drive into stories that captivate, charachters that <br> inspire, and a brcommunity that embraces your passion for anime.</p>
+
+            <button>Watch Now</button>
+            <button class="know_more">Know More</button>
+
+            <div class="movies">
+                <img src="./images/anime_a.jpeg" alt="">
+                <img src="./images/anime_b.jpeg" alt="">
+                <img src="./images/anime_c.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

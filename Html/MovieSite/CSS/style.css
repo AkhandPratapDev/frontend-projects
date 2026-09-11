@@ -1,0 +1,904 @@
+:root {
+    /* --main-clr: #9d00ff; */
+    --main-clr:red;
+    /* --black-clr: rgb(33, 33, 33); */
+    --black-clr: #202123;
+    --gray-clr: rgb(169, 169, 169);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    font-family: sans-serif;
+    transition: .3s linear;
+}
+
+html {
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .6rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--gray-clr);
+    border-radius: 5rem;
+}
+
+img::selection {
+    background-color: #fff;
+}
+
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection {
+    background-color: #fff;
+}
+
+
+/* Header section START */
+
+.header .logo {
+    grid-area: logo;
+}
+
+.header .navbar {
+    grid-area: navbar;
+}
+
+.header .search_form {
+    grid-area: search_form;
+}
+
+.header .nav_btns {
+    grid-area: nav_btns;
+}
+
+.header #search_icon {
+    grid-area: search_icon;
+    color: var(--main-clr);
+    font-size: 20px;
+    display: none;
+}
+
+.header {
+    background: var(--black-clr);
+    display: grid;
+    grid-template-areas: 'logo  navbar navbar navbar navbar  navbar navbar navbar navbar navbar  search_form  search_icon nav_btns ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 5rem;
+    margin-left: 20px;
+}
+
+.header .navbar a {
+    font-size: 1.4rem;
+    padding: 2px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.header .navbar a:hover {
+    color: var(--main-clr);
+    border-bottom: .1rem solid var(--main-clr);
+}
+
+.header .search_form {
+    background-color: #fff;
+    padding: .8rem;
+    border-radius: .5rem;
+    margin-right: 10px;
+    width: 240px;
+}
+
+.header .search_form input {
+    background: transparent;
+}
+
+.header .search_form label {
+    color: var(--main-clr);
+    font-weight: bolder;
+    margin-left: 40px;
+}
+
+.header .nav_btns {
+    display: flex;
+    align-items: center;
+}
+
+.nav_btns .buy_plans {
+    max-width: 80px;
+    min-height: 40px;
+    padding: 8px;
+    border: 2px solid var(--main-clr);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--main-clr);
+    font-weight: bolder;
+    margin-right: 50px;
+}
+
+.nav_btns .login {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+/* Header section START */
+
+
+/* Login Form START */
+
+ form {
+
+        position: absolute;
+        top:100%;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        background: var(--black-clr);
+        min-height: 92vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        align-items: center;
+    } 
+form input[type='file'] {
+    display: none;
+}
+
+form span.close_sym {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--main-clr);
+    right: 5px;
+}
+
+form span.close_sym:hover {
+    color: red;
+    font-size: 43px;
+}
+
+form img.user_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--main-clr);
+    margin-top: 40px;
+}
+
+form label.upload_img {
+    background: var(--main-clr);
+    color: #fff;
+    padding: 8px;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: .5rem;
+    margin: 20px 0;
+}
+
+form .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+form .user_info label {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+form .user_info .username,
+.password {
+    min-width: 390px;
+    padding: 12px;
+    border-radius: .5rem;
+}
+
+form .user_info .login_btn {
+    padding: 15px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600px;
+    background: rgb(3, 168, 3);
+}
+
+form .user_info label.remember input {
+    width: 25px;
+}
+
+
+form .reset_btns .reset_btn {
+    min-width: 100px;
+    background: red;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: .5rem;
+}
+
+form .reset_btns span.forgot_pws {
+    font-size: 15px;
+    color: var(--main-clr);
+    margin-left: 10pc;
+    border-bottom: 2px solid var(--main-clr);
+}
+
+
+form .reset_btns span a {
+    color: var(--main-clr);
+}
+
+form .reset_btns span a:hover {
+    color: red;
+}
+
+form button.sign_up {
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 8px;
+    min-width: 120px;
+    background: var(--main-clr);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.from_display {
+    right: 0;
+    
+}
+
+/* Login Form END */
+
+/* BuyPlan Section STARTS */
+
+
+.buy_plan {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    background: var(--black-clr);
+    min-height: 92vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    align-items: center;
+    transition: .3s linear;
+}
+
+.buy_plan .ad_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy_plan .ad_container .ad_img {
+    width: 700px;
+    height: 250px;
+    border-radius: 1rem;
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.buy_plan .choose_plan {
+    font-size: 30px;
+    font-weight: bolder;
+    background: linear-gradient(to right, var(--main-clr) 30%, #fff 90%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+
+.buy_plan .plan_cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buy_plan .plan_cards .plan_card {
+    background-color: transparent;
+    border: 2px solid var(--main-clr);
+    height: 120px;
+    width: 200px;
+    border-radius: 1rem;
+    margin: 30px;
+    text-align: center;
+}
+
+.buy_plan .plan_cards .plan_card .premium {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.buy_plan .plan_cards .plan_card .price {
+    margin-top: 10px;
+    color: #f3bdff;
+}
+
+.buy_plan .plan_cards .plan_card .time {
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+.buy_plan .applyCode {
+    border: none;
+    background-color: var(--main-clr);
+    color: #fff;
+    padding: 13px;
+    min-width: 120px;
+    border-radius: 2rem;
+    margin-left: -35pc;
+}
+
+.buy_plan .plan_benifits {
+    margin-top: 20px;
+    display: flex;
+}
+
+.buy_plan .plan_benifits .benefits li {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 18rem;
+}
+
+.buy_plan img.plan_logo {
+    height: 10rem;
+    margin-top: -1pc;
+}
+
+.buyPlan_display {
+    right: 0;
+}
+
+/* BuyPlan Section ENDS */
+
+/* btn_option Section Start */
+
+section.btn_options {
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+
+section.btn_options .btns_container {
+    display: flex;
+    overflow-x: scroll;
+    /* position: fixed; */
+}
+
+section.btn_options .btns_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+section.btn_options .btns_container a {
+    margin-left: 20px;
+}
+
+section.btn_options .btns_container a button {
+    background: var(--black-clr);
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: bolder;
+    min-width: 120px;
+    min-height: 40px;
+    transition: .2s;
+    margin-top: 20px;
+}
+
+section.btn_options .btns_container a button:hover {
+    opacity: 0.8;
+}
+
+/* btn_option Section End */
+
+/* ads2_container starts */
+
+section.ads2_container {
+    background: var(--black-clr);
+    min-width: 100%;
+    max-height: 30%;
+    display: flex;
+    overflow-x: scroll;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+section.ads2_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+section.ads2_container img {
+    margin-left: 20px;
+    display: none;
+    min-width: 650px;
+    max-height: 350px;
+    border-radius: 2rem;
+    /* border: 2px solid blueviolet; */
+}
+
+section.ads2_container img.ad1_img {
+    margin-left: -15pc;
+}
+
+
+section.ads2_container #backBtn,
+#nextBtn {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 40px;
+    color: var(--gray-clr);
+    font-size: 80px;
+    position: absolute;
+    top: 270px;
+    opacity: .6;
+}
+
+section.ads2_container #nextBtn {
+    left: 90vw;
+
+}
+
+section.ads2_container #backBtn:hover,
+#nextBtn:hover {
+    opacity: 1;
+}
+
+/* ads2_container ends */
+
+
+/* main Section starts */
+
+section.main .videos_title {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 30px;
+    /* color: #fff; */
+}
+
+/* main Section Ends */
+
+section.main .trending_container,
+.topShows_container,
+.live_container,
+.movies_container,
+.sports_container,
+.sportsV_container,
+.mustMovie_container,
+.news_container,
+.newsV_container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-behavior: auto;
+}
+
+section.main .trending_container::-webkit-scrollbar,
+.topShows_container::-webkit-scrollbar,
+.live_container::-webkit-scrollbar,
+.movies_container::-webkit-scrollbar,
+.sports_container::-webkit-scrollbar,
+.sportsV_container::-webkit-scrollbar,
+.mustMovie_container::-webkit-scrollbar,
+.news_container::-webkit-scrollbar,
+.newsV_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+section.main .trending_container a img,
+.live_container a img,
+.movies_container a img,
+.newsV_container a img {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 250px;
+    height: 150px;
+    border-radius: 2rem;
+    background-color: var(--gray-clr);
+    transition: .2s;
+}
+
+section.main .trending_container a img:hover,
+.live_container a img:hover,
+.movies_container a img:hover,
+.newsV_container a img:hover {
+    transform: scale(1.1);
+    border-radius: 0;
+    opacity: 0.8;
+
+
+}
+
+section.main .topShows_container a img,
+.sportsV_container a img,
+.mustMovie_container a img {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 150px;
+    height: 200px;
+    border-radius: 2rem;
+    transition: .2s;
+
+}
+
+section.main .topShows_container a img:hover,
+.sportsV_container a img:hover,
+.mustMovie_container a img:hover {
+    transform: scale(1.1);
+    border-radius: 0;
+    opacity: 0.8;
+
+
+
+}
+
+section.main .sports_container a img,
+.news_container a img {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--gray-clr);
+    border-radius: 50%;
+    transition: .2s;
+
+}
+
+section.main .sports_container a img:hover,
+.news_container a img:hover {
+    opacity: 0.7;
+}
+
+section.main .ad3_container .ad3_box {
+    background: var(--gray-clr);
+    width: 95vw;
+    height: 300px;
+    margin: 35px;
+    margin-top: 100px;
+}
+
+section.main .ad3_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.main .ad3_container .ad3_box .ad7_img {
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+}
+
+/* main section Ends */
+
+
+/* Footer Sectin Starts */
+section.footer .backto_top{
+    width: 100vw;
+    height: 30px;
+    margin-top: 100px;
+    background: #17181a;
+    border-bottom: 2px solid var(--gray-clr);
+    border-top: 2px solid var(--gray-clr);
+    color: #fff;
+    font-weight: bolder;
+}
+section.footer .last_contianer {
+    background: var(--black-clr);
+    width: 100vw;
+    height: 320px;
+    /* margin-top: 80px; */
+    display: grid;
+    grid-template-columns: auto  2fr  1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+section.footer .last_contianer div {
+    align-items: center;
+
+}
+section.footer .last_contianer .connect h2 {
+    font-size: 30px;
+    margin: 20px;
+}
+section.footer .last_contianer .connect h3 {
+    font-size: 20px;
+    margin: 20px;
+    font-weight: 100;
+}
+section.footer .last_contianer .share a {
+    font-size: 2rem;
+    border: 2px solid var(--main-clr);
+    border-radius: 50%;
+    color: var(--main-clr);
+    padding:13px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    transition: .2s;
+    text-align: center;
+}
+section.footer .last_contianer .share a:hover {
+background: #17181a;
+opacity: 0.6;
+}
+
+section.footer .last_contianer .watches{
+  margin-left: 70px;
+}
+
+section.footer .last_contianer .watches h2 {
+    font-size: 50px;
+    padding: 20px;
+
+}
+section.footer .last_contianer .watches .need_help {
+    font-size:20px;
+    margin-top: 20px;
+    text-decoration: underline;
+
+
+}
+
+section.footer .last_contianer .watches .all_links{
+    display: flex;
+    transition: 0.2s;
+}
+
+section.footer .last_contianer .watches .all_links a:hover{
+    background: #17181a;
+    opacity: 0.6;
+}
+
+section.footer .last_contianer .watches .all_links a{
+  background: transparent;
+  border: 2px solid var(--main-clr);
+  color:var(--main-clr);
+  width: 140px;
+ padding: 10px;
+ font-size: 12px;
+}
+
+section.footer .last_contianer div img {
+    width: 200px;
+    height: 200px;
+}
+
+section.footer .last_contianer div .download {
+    border: 2px solid var(--main-clr);
+    background: transparent;
+    color: var(--main-clr);
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 2.5rem;
+    width: 170px;
+    margin-top: 10px;
+}
+
+.copyright {
+    border-top: 2px solid var(--gray-clr);
+    text-align: center;
+    padding: 8px;
+    font-weight: 100;
+}
+
+
+
+/* Footer Sectin Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
+
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header .search_form {
+        display: none;
+    }
+
+    .header #search_icon {
+        display: inline-block;
+    }
+
+    .nav_btns .buy_plans {
+        padding: 5px;
+        min-height: 35px;
+        margin-right: 40px;
+    }
+
+    .nav_btns .login {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    section.btn_options .btns_container a button {
+        min-width: 70px;
+        min-height: 32px;
+        font-size: 1.1rem;
+        border-radius: 2rem;
+
+    }
+
+    section.btn_options {
+        margin-top: 55px;
+        margin-bottom: 30px;
+    }
+
+    /* main section */
+
+
+    section.ads2_container img {
+        min-width: 500px;
+        max-height: 250px;
+    }
+
+    section.ads2_container #backBtn,
+#nextBtn {
+  
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    font-size: 60px;
+    top: 240px;
+}
+
+section.ads2_container #nextBtn {
+    left: 83vw;
+
+}
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .nav_btns .buy_plans {
+        font-size: 1.5rem;
+        min-height: 30px;
+        margin-right: 25px;
+
+    }
+
+    section.btn_options .btns_container a button {
+        min-width: 65px;
+        min-height: 30px;
+        font-size: 1.1rem;
+    }
+
+    section.btn_options {
+        margin-top: 45px;
+    }
+}
+
+@media(max-width:550px) {
+    html {
+        font-size: 40%;
+    }
+
+    .nav_btns .buy_plans {
+        font-size: 1.5rem;
+        min-height: 25px;
+        margin-right: 25px;
+
+    }
+
+    .header #search_icon {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .nav_btns .login {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+    section.btn_options .btns_container a button {
+        min-width: 60px;
+        min-height: 27px;
+        font-size: 1rem;
+    }
+
+    section.btn_options {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:500px) {
+
+    .header .navbar a {
+        display: none;
+    }
+
+    .header #search_icon {
+        margin-right: 5px;
+    }
+
+    section.btn_options .btns_container a button {
+        min-width: 50px;
+        min-height: 25px;
+        font-size: 1rem;
+    }
+}
+
+body {
+    background: #17181a;
+    color: #fff;
+}

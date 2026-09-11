@@ -1,0 +1,112 @@
+:root {
+    --primary-clr: #121534;
+    --secondary-clr: #eee;
+    --text-clr: #eee;
+    --dark-clr: #000;
+    --hover-clr: #50117d;
+}
+
+body.dark_theme {
+    --primary-clr: #071127;
+    --secondary-clr: #071127;
+    --dark-clr: #ffffff;
+    --hover-clr: #50117d;
+    --border-clr: #473b92;
+    --text-clr: #473b92;
+
+}
+
+section.backgrounds {
+    background: var(--secondary-clr);
+}
+
+section.backgrounds .background_hero_img {
+    margin-top: 100px;
+}
+
+section.backgrounds .backgrounds_search_container {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: var(--secondary-clr);
+    z-index: 998;
+    left: 0;
+    top: 59px;
+}
+
+.backgrounds .search_box {
+    position: fixed;
+    height: 42px;
+    width: 400px;
+    margin-bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    z-index: 10000;
+}
+
+.backgrounds .search_box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #323334;
+    padding: 0 15px 0 45px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.backgrounds .search_box img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.background_hero_img .hero_background_image_box:hover img {
+    transform: scale(1.05);
+}
+
+.background_hero_img .hero_background_image_box h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.backgrounds .not {
+    width: 80vw;
+    height: 70vh;
+    display: none;
+    /* Hidden by default */
+    border: 2px solid #0c0356;
+    border-radius: 5rem;
+    margin: auto;
+}
+
+@media screen and (max-width: 435px) {
+    .backgrounds .search_box input {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .backgrounds .search_box img {
+        left: 13%;
+    }
+
+    section.backgrounds .backgrounds_search_container {
+        top: 56px;
+        height: 80px;
+    }
+}

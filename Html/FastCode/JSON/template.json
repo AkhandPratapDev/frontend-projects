@@ -1,0 +1,40 @@
+{
+    "templates": [
+        {
+            "name": "Web Template 1",
+            "html": "index1.html",
+            "css": "style1.css",
+            "js": "script1.js",
+            "images": "/TRY/IMAGES/img1.zip", 
+            "imageSrc": "/TRY/IMAGES/web.png",
+            "open":"../HTML/theme.html"
+        },
+        {
+            "name": "Web Template 2",
+            "html": "index2.html",
+            "css": "style2.css",
+            "js": "script2.js",
+            "images": "/TRY/IMAGES/img2.zip",
+            "imageSrc": "/TRY/IMAGES/web.png",
+            "open":"../HTML/theme.html"
+        },
+        {
+            "name": "Web Template 3",
+            "html": "index3.html",
+            "css": "style3.css",
+            "js": "script3.js",
+            "images": "/TRY/IMAGES/img3.zip",
+            "imageSrc": "/TRY/IMAGES/web.png",
+             "open":"../HTML/theme.html"
+        },
+        {
+            "name": "Web Template 4",
+            "html": "index3.html",
+            "css": "style3.css",
+            "js": "script3.js",
+            "images": "/TRY/IMAGES/img3.zip",
+            "imageSrc": "/TRY/IMAGES/web.png",
+            "open":"../HTML/theme.html"
+        }
+    ]
+}
